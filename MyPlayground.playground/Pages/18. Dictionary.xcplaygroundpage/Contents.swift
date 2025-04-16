@@ -9,8 +9,8 @@
 
 //Syntax
 var dict1 :[String: Int] = ["Sushant": 1 , "Rohit": 2, "Amit": 3]
-print(dict1["Sushant"]) // print - 1
-print(dict1["Sabu"]) // print - nil - Dictionary is safe to run optional values
+print(dict1["Sushant"] ?? "") // print - 1 values are optional in Dictionary,so give them a default value or check with if else
+print(dict1["Sabu"] ?? "" ) // print - nil - Dictionary is safe to run even if there is no any key
 
 //key must be unique
 var dic2 :[Int: String] = [1 : "Apple", 2 : "Banana", 3 : "Orange"] // key must be unique
